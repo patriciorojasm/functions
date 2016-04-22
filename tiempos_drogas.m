@@ -1,0 +1,14 @@
+m1_i = 161;
+m1_f = 180;
+m2_i = 260;
+m2_f = 479;
+dt= .0001;
+%dt= .0001/5;
+length = 49920;
+m1_i = m1_i*length*dt;
+m1_f = m1_f*length*dt;
+m2_i = m2_i*length*dt;
+m2_f = m2_f*length*dt;
+disp(num2str(m1_i));
+disp(num2str(m1_f));
+disp(num2str(m2_i));

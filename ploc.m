@@ -1,0 +1,20 @@
+
+%--plotea segmentos como clampfit
+c=1;
+n_plots=50;
+hold on;
+figure;
+%length=dt*p_trace*traces;
+%for c=1:n_plots
+ %   subplot(n_plots,1,c);
+    x1= (c-1)*length/n_plots;
+    x2= c*length/n_plots;
+    plot(time_06, data_06(2,:));  %ch1) %, x1,x2); 
+   % plot(time, d_f2);
+    xlim([x1 x2]);
+ %   ylim([-100 200]);
+%end
+
+%uicontrol('Style', 'pushbutton', 'String', 'Der',...
+%    'Position', [20 20 50 20], 'callback', {@r});
+

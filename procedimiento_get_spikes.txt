@@ -1,0 +1,22 @@
+load('130305_023.mat')
+ch1 = data(2,:);
+ch2 = data(3,:);
+
+resamp % para cada canal
+% correr resamp cambiando los nombres en las lineas 3 y 4
+
+% save resample matriz in a new .mat
+data = resamp_1;
+save('ch1r.mat','data','-v7.3');
+
+data = resamp_2;
+save('ch2r.mat','data','-v7.3');
+
+clear
+
+% get spikes
+f_Get_spikes_1('ch1r.mat',10000,1);
+load('ch1r.mat_spikes.mat')
+
+% plot spikes
+plo_spikes

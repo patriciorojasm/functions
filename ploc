@@ -1,0 +1,14 @@
+%--plotea segmentos como clampfit
+c=1;
+n_plots=10;
+hold on;
+figure;
+length=dt*p_trace*traces;
+for c=1:n_plots
+    subplot(n_plots,1,c);
+    x1= (c-1)*length/n_plots;
+    x2= c*length/n_plots;
+    plot(time, data(2,:));  %ch1) %, x1,x2); 
+    xlim([x1 x2]);
+    ylim([-100 200]);
+end
